@@ -1,0 +1,53 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin mwidth($mwidth) {
+  width: 100%;
+  max-width: $mwidth;
+}
+
+@mixin marbot($marbot) {
+  margin: 0;
+  margin-bottom: $marbot;
+}
+
+@mixin yelbutton {
+  display: inline-block;
+  padding: 14px 39px;
+  background-color: #fcb72b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+
+  &:hover {
+    color: #fcb72b;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #fcb72b;
+  }
+}
+
+@mixin navlist {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+@mixin navlink {
+  display: inline-block;
+  margin-right: 32px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+
+  &:hover {
+    color: #fcb72b;
+  }
+}
